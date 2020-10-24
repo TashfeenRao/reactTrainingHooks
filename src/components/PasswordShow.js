@@ -1,20 +1,17 @@
 import React, { useState } from "react";
 
 const PasswordShow = () => {
-  const [type, setType] = useState("password");
+  const [type, setType] = useState(false);
 
-  const handleShow = () => {
-    if (type === "password") {
-      setType("text");
-    } else {
-      setType("password");
-    }
-  };
   return (
     <div className="box">
       <label htmlFor="password">Password</label>
-      <input type={type} />
-      <input type="checkbox" onClick={handleShow}></input>
+      <input type={type ? "text" : "password"} />
+      <input
+        type="checkbox"
+        defaultChecked={type}
+        onChange={() => setType(!type)}
+      ></input>
     </div>
   );
 };

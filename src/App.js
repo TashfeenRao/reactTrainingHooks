@@ -1,7 +1,10 @@
-
 function App() {
   return (
-  <h1>Hellow world</h1>
+    <div className="box">
+      <button>Plus</button>
+      <p>5</p>
+      <button>Minus</button>
+    </div>
   );
 }
 

@@ -1,9 +1,12 @@
+import React, { useState } from "react";
+
 function App() {
+  const [num, setNum] = useState(5);
   return (
     <div className="box">
-      <button>Plus</button>
-      <p>5</p>
-      <button>Minus</button>
+      <button onClick={() => setNum(num + 1)}>Plus</button>
+      <p>{num}</p>
+      <button onClick={() => setNum(num - 1)}>Minus</button>
     </div>
   );
 }

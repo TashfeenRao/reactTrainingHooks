@@ -1,9 +1,9 @@
-import Counter from "./components/Counter";
+import PasswordShow from "./components/PasswordShow";
 
 function App() {
   return (
-    <div>
-      <Counter />
+    <div className="box">
+      <PasswordShow />
     </div>
   );
 }

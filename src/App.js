@@ -22,9 +22,12 @@ function App() {
         <p>{num}</p>
         <button onClick={handleMinus}>Minus</button>
       </div>
-      <center>
-        <p>{error}</p>
-      </center>
+      {error && (
+        <center>
+          <button onClick={() => setError(null)}>dismis</button>
+          <p>{error}</p>
+        </center>
+      )}
     </div>
   );
 }

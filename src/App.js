@@ -2,7 +2,7 @@ import Textcounter from "./components/Textcounter";
 
 function App() {
   return (
-    <div className="box">
+    <div className="">
       <Textcounter />
     </div>
   );

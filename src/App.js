@@ -1,9 +1,9 @@
-import Textcounter from "./components/Textcounter";
+import FormPanel from "./components/FormPanel";
 
 function App() {
   return (
     <div className="">
-      <Textcounter />
+      <FormPanel/>
     </div>
   );
 }

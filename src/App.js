@@ -1,9 +1,9 @@
-import FormPanel from "./components/FormPanel";
+import DateComponent from "./components/CompoundComponent/Date";
 
 function App() {
   return (
     <div className="">
-      <FormPanel/>
+      <DateComponent />
     </div>
   );
 }

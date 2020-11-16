@@ -1,9 +1,9 @@
-import DateComponent from "./components/CompoundComponent/Date";
+const { default: Reducer1 } = require("./components/ReducerHook/Reducer1");
 
 function App() {
   return (
-    <div className="">
-      <DateComponent />
+    <div>
+      <Reducer1 />
     </div>
   );
 }
